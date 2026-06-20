@@ -1,9 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-    --bg: #0f0e0c; --fg: #f0ebe0; --card: #191713;
-    --muted-bg: #252320; --muted-fg: #8a8070;
-    --accent: #c8a96e; --border: rgba(240,235,224,0.1);
+    /* Dark Mode */
+    --bg: #0f0e0c;
+    --fg: #eaf6ff;
+
+    /* Light Mode */
+    /* --bg-light: #eaf6ff; */
+    /* --fg-light: #0f0e0c; */
+
+    --card: #191713;
+
+    --muted-bg: #252320;
+    --muted-fg: #8a8070;
+    --accent: #c8a96e;
+    --border: rgba(240, 235, 224, 0.1);
     --font-serif: 'Playfair Display', Georgia, serif;
     --font-sans: 'DM Sans', system-ui, sans-serif;
     --font-mono: 'DM Mono', monospace;
