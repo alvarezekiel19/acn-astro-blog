@@ -1,1 +1,60 @@
 @import "tailwindcss";
+
+@theme {
+    --bg: #0f0e0c; --fg: #f0ebe0; --card: #191713;
+    --muted-bg: #252320; --muted-fg: #8a8070;
+    --accent: #c8a96e; --border: rgba(240,235,224,0.1);
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'DM Mono', monospace;
+}
+
+@layer base {
+    html {
+        font-size: 16px;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: var(--bg);
+        color: var(--fg);
+        font-family: var(--font-sans);
+        font-weight: 400;
+        line-height: 1.6;
+        min-height: 100vh;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--muted-bg);
+}
+
+@utility nav-link {
+    font-family: var(--font-mono);
+    font-size: .7rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted-fg);
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color .2s;
+    padding: 0;
+
+    &:hover {
+        color: var(--fg);
+    }
+
+    &.active {
+        color: var(--accent);
+    }
+}
