@@ -5,7 +5,7 @@ interface Props {
     title: string;
     excerpt: string;
     author: string;
-    readingTime: string;
+    readingTime: number;
     image: string;
     imageAlt: string;
     href: string;
@@ -21,6 +21,8 @@ const {
     imageAlt,
     href,
 } = Astro.props;
+
+const formattedReadingTime = `${readingTime} min read`;
 ---
 <a
     href={href}
@@ -51,7 +53,7 @@ const {
 
         <p class="mt-auto flex items-baseline justify-between font-mono text-[0.7rem] tracking-wide text-text-faint">
             <span>{author}</span>
-            <span>{readingTime}</span>
+            <span>{formattedReadingTime}</span>
         </p>
     </div>
 </a>

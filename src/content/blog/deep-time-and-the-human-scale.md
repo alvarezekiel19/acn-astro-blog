@@ -4,7 +4,7 @@ excerpt: "Sitting with 500 million years of rock formation teaches patience — 
 category: "SCIENCE"
 number: "004"
 author: "Darius Mbeki"
-readingTime: "7 min"
+readingTime: 7
 image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80"
 imageAlt: "Server racks with glowing lights"
 date: 2026-05-02

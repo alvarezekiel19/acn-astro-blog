@@ -4,7 +4,7 @@ excerpt: "How the probabilistic nature of large language models reshapes our exp
 category: "TECHNOLOGY"
 number: "002"
 author: "Theo Nakamura"
-readingTime: "9 min"
+readingTime: 7
 image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80"
 imageAlt: "Close-up of a circuit board"
 date: 2026-04-12

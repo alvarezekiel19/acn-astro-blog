@@ -3,11 +3,19 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import PostCard from '../components/PostCard.astro';
+import Featured from '../components/Featured.astro';
 
 const posts = await getCollection('blog');
+
+const featuredPost = posts.find((post) => post.data.isFeatured);
+
+const regularPosts = posts.filter((post) => !post.data.isFeatured);
 ---
 
 <Layout>
+    {featuredPost && (
+        <Featured {...featuredPost.data} href={`/blog/${featuredPost.id}`} />
+    )}
     <main class="grid grid-cols-1 gap-x-8 gap-y-10 px-6 pt-10 pb-16 sm:px-12 md:grid-cols-3">
         {posts.map((post) => (
           <PostCard {...post.data} href={`/blog/${post.id}`} />
