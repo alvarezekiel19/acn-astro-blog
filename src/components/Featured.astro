@@ -37,7 +37,8 @@ const formattedDate = date.toLocaleDateString('en-US', {
 const formattedReadingTime = `${readingTime} min read`;
 
 ---
-<section class="border-b border-(--border)">
+<section class="border-b border-(--border) pt-24">
+<a href={href} class="text-inherit no-underline">
   <div class="mx-auto grid grid-columns-1 gap-10 px-10 py-12 align-start md:grid-cols-[1fr_16rem]">
     
     <div class="featured-card group cursor-pointer">
@@ -83,4 +84,5 @@ const formattedReadingTime = `${readingTime} min read`;
     </aside>
 
   </div>
+</a>
 </section>
